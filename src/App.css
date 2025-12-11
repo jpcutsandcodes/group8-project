@@ -1,0 +1,157 @@
+/* Entire App Layout */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn:hover {
+  background: #0b5ed7;
+}
+
+/* TABLE STYLE */
+.table-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item-table th {
+  background: #1d2d50;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.item-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background: #fdfdfd;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 13px;
+}
+
+.view { background: #6f42c1; }
+.view:hover { background: #59349c; }
+
+.edit { background: #0d6efd; }
+.edit:hover { background: #0b5ed7; }
+
+.delete { background: #dc3545; }
+.delete:hover { background: #b02a37; }
+
+/* If no items found */
+.empty {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+/* MODAL OVERLAY */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: white;
+  padding: 20px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.modal-box h2 {
+  margin-bottom: 15px;
+}
+
+.modal-box label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.close {
+  background: #6c757d;
+}
+
+.close:hover {
+  background: #5a6268;
+}
+
+.save {
+  background: #198754;
+}
+
+.save:hover {
+  background: #157347;
+}
